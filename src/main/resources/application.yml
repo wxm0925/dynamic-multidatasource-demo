@@ -1,0 +1,19 @@
+server:
+  port: 18098
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    test:
+      url: jdbc:mysql://192.168.2.211:3306/test?characterEncoding=UTF-8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowMultiQueries=true
+      username: root
+      password: Hnzk_2022!@#$
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    test2:
+      url: jdbc:mysql://192.168.2.211:3306/test2?characterEncoding=UTF-8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowMultiQueries=true
+      username: root
+      password: Hnzk_2022!@#$
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*/*Mapper.xml
